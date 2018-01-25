@@ -22,9 +22,6 @@ spec:
     - https://keystone.scloud.switch.ch:5000/v3
     image: zioproto/k8s-keystone-auth
     imagePullPolicy: Always
-    env:
-      - name: OPENSTACK_KEYSTONE_URL
-        value: "https://keystone.scloud.switch.ch:5000/v3"
     #livenessProbe:
     #  failureThreshold: 8
     #  httpGet:
