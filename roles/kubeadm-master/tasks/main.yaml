@@ -34,9 +34,9 @@
     src: files/webhook.kubeconfig.yaml
 
 - name: Upload webook kubeconfig file
-  copy:
+  template:
     dest: /etc/kubernetes/manifests/k8s-keystone-auth.yaml
-    src: files/k8s-keystone-auth.yaml
+    src: files/k8s-keystone-auth.yaml.j2
 
 - name: Configure keystone integration
   blockinfile:
